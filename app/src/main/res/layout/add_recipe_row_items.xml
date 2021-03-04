@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="210dp"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/image_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        app:backgroundTint="#80807D"
+        android:background="@drawable/baground_delete_button"
+        android:clickable="true"
+        app:fabCustomSize="40dp"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#325E395E"
+        app:cardElevation="5dp"
+        android:background="@drawable/bacground_border"
+        android:foregroundTint="#0F171E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+
+        <ImageView
+            android:id="@+id/item_image2"
+            android:layout_width="175dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/standarimage"
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_baseline_add_24" />
+
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

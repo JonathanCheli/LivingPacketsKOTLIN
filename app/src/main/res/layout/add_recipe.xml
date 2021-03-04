@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F171E"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#0F171E">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolb"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#335E395E"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white"
+                android:text="@string/add_recipes">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/save_data_id"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:background="#335E395E"
+                android:textColor="@color/white"
+                android:text="@string/done">
+
+            </Button>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/recipe_title"/>
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title"
+                android:textColorHint="#A4CAC7CA"
+                android:textColor="@color/white"
+                android:background="@drawable/bacground_border"
+                android:lines="2"
+                android:padding="10dp"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:importantForAutofill="no" tools:targetApi="o"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/recipe_description"/>
+
+
+
+
+            <EditText
+                android:id="@+id/edit_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:lines="6"
+                android:padding="10dp"
+                android:background="@drawable/bacground_border"
+                android:hint="@string/description"
+                android:textColorHint="#A4CAC7CA"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="" tools:targetApi="o"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_recycler2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_new_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            app:backgroundTint="#80807D"
+            android:background="@drawable/baground_delete_button"
+            android:clickable="true"
+            app:fabCustomSize="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_add_white_24"
+            android:contentDescription="@string/standardbtn" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

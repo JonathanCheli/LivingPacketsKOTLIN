@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LP_JC_KOTLIN</string>
+    <string name="standardbtn">standardbtn</string>
+    <string name="description">Description</string>
+    <string name="recipe_description">Recipe description</string>
+    <string name="title">Title</string>
+    <string name="recipe_title">Recipe title</string>
+    <string name="done">Done</string>
+    <string name="add_recipes">Add Recipes</string>
+    <string name="standarimage">standarimage</string>
+</resources>
